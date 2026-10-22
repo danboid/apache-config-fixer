@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+
+# apache-fix.py is a Python script to help get apache servers with faulty config files fixed faster
+# by commenting out the problematic lines in apache configuration files.
+
+# It must be run as root or using sudo with suitable permissions to edit all apache config files.
+# Only tested under Ubuntu so far.
+# By Dan MacDonald, 2026
+
 import subprocess
 import re
 import glob
